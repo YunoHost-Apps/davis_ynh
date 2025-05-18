@@ -11,7 +11,7 @@ source /usr/share/yunohost/helpers
 # INITIALIZE AND STORE SETTINGS
 #=================================================
 
-timezone=$(cat /etc/timezone)
+timezone=$(timedatectl show --value --property=Timezone)
 key=$(ynh_string_random --length=32)
 
 password=$YNH_APP_ARG_PASSWORD
