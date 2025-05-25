@@ -33,15 +33,15 @@ ram.runtime = "100M"
     [install.domain]
     type = "domain"
 
-    [install.init_main_permission]
-    type = "group"
-    default = "visitors"
+    #[install.init_main_permission]
+    #type = "group"
+    #default = "visitors"
 
-    [install.admin]
-    type = "user"
+    #[install.admin]
+    #type = "user"
 
-    [install.password]
-    type = "password"
+    #[install.password]
+    #type = "password"
 
 [resources]
 
@@ -61,6 +61,7 @@ ram.runtime = "100M"
     
     [resources.permissions]
     main.url = "/"
+    main.allowed = ["admins"]
 
     [resources.apt]
     packages = "postgresql, php8.4-intl, php8.4-gd, php8.4-pgsql, php8.4-ldap, php8.4-curl, php8.4-dom, php8.4-xml"
