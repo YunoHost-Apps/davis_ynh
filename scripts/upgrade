@@ -19,7 +19,7 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env.local"
 #=================================================
 #ynh_script_progression "Updating $app's configuration files..."
 
-#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
+#ynh_config_add --template=".env.local" --destination="$install_dir/.env.local"
 
 #=================================================
 # INSTALL APP WITH COMPOSER
