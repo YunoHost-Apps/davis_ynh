@@ -16,7 +16,7 @@ license = "MIT"
 code = "https://github.com/tchapi/davis"
 
 [integration]
-yunohost = ">= 12.0.9"
+yunohost = ">= 12.1.17"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -67,3 +67,6 @@ ram.runtime = "100M"
 
     [resources.database]
     type = "postgresql"
+
+    [resources.composer]
+    version = "2.8.8"
