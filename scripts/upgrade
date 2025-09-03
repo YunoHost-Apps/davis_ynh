@@ -4,7 +4,6 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-
 source /usr/share/yunohost/helpers
 
 #=================================================
@@ -26,7 +25,6 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env.local"
 #=================================================
 ynh_script_progression "Installing app with Composer..."
 
-#REMOVEME? ynh_composer_install
 ynh_composer_exec install --no-dev
 
 #=================================================
