@@ -48,7 +48,7 @@ ram.runtime = "100M"
 
     [resources.sources.main]
     url = "https://github.com/tchapi/davis/archive/refs/tags/v5.3.0.tar.gz"
-    sha256 = "8a8a4a6696f36359622e5d0e766b3cf02c82078f0e0fb3853635d245e044403e"
+    sha256 = "18701e4f3b3c5a17cef47b82fc57706ea2e0ed29fd049262f1872e7893c75009"
 
     autoupdate.strategy = "latest_github_tag"
 
