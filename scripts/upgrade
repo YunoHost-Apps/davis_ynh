@@ -4,8 +4,9 @@
 # IMPORT GENERIC HELPERS
 #=================================================
 
-source _common.sh
 source /usr/share/yunohost/helpers
+
+ynh_app_setting_set --key=protect_against_basic_auth_spoofing --value=false
 
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
@@ -26,7 +27,6 @@ ynh_setup_source --dest_dir="$install_dir" --full_replace --keep=".env.local"
 #=================================================
 ynh_script_progression "Installing app with Composer..."
 
-ynh_composer_install
 ynh_composer_exec install --no-dev
 
 #=================================================
