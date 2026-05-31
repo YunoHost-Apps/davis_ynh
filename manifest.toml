@@ -7,7 +7,7 @@ name = "Davis"
 description.en = "Lightweight CalDAV and CardDAV server"
 description.fr = "Serveur CalDAV et CardDAV léger"
 
-version = "5.4.2~ynh1"
+version = "5.4.2~ynh2"
 
 maintainers = ["eric_G"]
 
