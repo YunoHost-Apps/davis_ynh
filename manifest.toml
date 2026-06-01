@@ -7,7 +7,7 @@ name = "Davis"
 description.en = "Lightweight CalDAV and CardDAV server"
 description.fr = "Serveur CalDAV et CardDAV léger"
 
-version = "5.4.2~ynh2"
+version = "5.4.3~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -47,8 +47,8 @@ ram.runtime = "100M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/tchapi/davis/archive/refs/tags/v5.4.2.tar.gz"
-    sha256 = "72db6d4885cef8e5eed5d5a4bb02fb1fdbe6b5d962fc8d19e399338caa5b8b20"
+    url = "https://github.com/tchapi/davis/archive/refs/tags/v5.4.3.tar.gz"
+    sha256 = "5421b33e33f1bfed49a2252b02c60566b56d7c8b934917b681609c96ea0115c2"
 
     autoupdate.strategy = "latest_github_tag"
 
