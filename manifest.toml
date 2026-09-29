@@ -7,7 +7,7 @@ name = "Davis"
 description.en = "Lightweight CalDAV and CardDAV server"
 description.fr = "Serveur CalDAV et CardDAV léger"
 
-version = "5.3.0~ynh1"
+version = "5.4.4~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ license = "MIT"
 code = "https://github.com/tchapi/davis"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -47,8 +47,8 @@ ram.runtime = "100M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/tchapi/davis/archive/refs/tags/v5.3.0.tar.gz"
-    sha256 = "18701e4f3b3c5a17cef47b82fc57706ea2e0ed29fd049262f1872e7893c75009"
+    url = "https://github.com/tchapi/davis/archive/refs/tags/v5.4.4.tar.gz"
+    sha256 = "0736b8719342b59dcfb9e9dfa65a6ef9c84b950306e1d841773a093731a271d4"
 
     autoupdate.strategy = "latest_github_tag"
 
@@ -64,10 +64,10 @@ ram.runtime = "100M"
     main.url = "/"
 
     [resources.apt]
-    packages = "postgresql, php8.4-intl, php8.4-gd, php8.4-pgsql, php8.4-ldap, php8.4-curl, php8.4-dom, php8.4-xml, php8.4-zip"
+    packages = "postgresql, php8.5-intl, php8.5-gd, php8.5-pgsql, php8.5-ldap, php8.5-curl, php8.5-dom, php8.5-xml, php8.5-zip"
 
     [resources.database]
     type = "postgresql"
 
     [resources.composer]
-    version = "2.9.3"
+    version = "2.10.3"
